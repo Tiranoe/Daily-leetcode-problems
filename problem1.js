@@ -6,5 +6,12 @@ For example, 121 is a palindrome while 123 is not.
 */
 
 function Palindrome(x) {
-
+    // return x === x.split('').reverse().join('');
+    for(let i = 0; i < x.length / 2; i++){
+        if (x[i] !== x[x.length - 1 - i])
+        return false;
+    }
+    return true;
 }
+
+console.log(Palindrome(123))
