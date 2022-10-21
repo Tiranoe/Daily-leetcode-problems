@@ -25,3 +25,4 @@ function Palin(x) {
 
 console.log(Palin(123)) // false
 console.log(Palin(123454321)) // True
+
