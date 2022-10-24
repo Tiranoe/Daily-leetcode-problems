@@ -5,10 +5,13 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 */
 
 let addTwoNumbers = function(l1, l2) {
+    let answer = [];
     let number1 = l1.reverse().join("");
     let number2 = l2.reverse().join("");
     let result = parseInt(number1) + parseInt(number2);
-    console.log(result)
+    // console.log(result) brings a result in type of number, answers needs to be in an array
+    answer = result.toString().split("")
+    console.log(answer)
 };
 
 addTwoNumbers([2,4,3], [5,6,4]);
