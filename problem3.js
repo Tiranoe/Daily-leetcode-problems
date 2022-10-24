@@ -7,8 +7,8 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 let addTwoNumbers = function(l1, l2) {
     let number1 = l1.reverse().join("");
     let number2 = l2.reverse().join("");
-    console.log(number1)
-    console.log(number2)
+    let result = parseInt(number1) + parseInt(number2);
+    console.log(result)
 };
 
 addTwoNumbers([2,4,3], [5,6,4]);
