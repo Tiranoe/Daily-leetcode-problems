@@ -16,7 +16,7 @@
 # this answer does not work because str object has no attribute of 'pop' function
 def validAnagram(s,t):
     s = 'anagram'
-    t = 'naqgram'
+    t = 'naagarm'
     if len(s) != len(t):
         return False
 
@@ -24,6 +24,9 @@ def validAnagram(s,t):
 
     for i in range(len(s)):
         countS[s[i]] = 1 + countS.get(s[i], 0)
-        print(countS[i])
         countT[t[i]] = 1 + countT.get(t[i], 0)
     return countS == countT
+    # figured out that this part of the solution is solved with method called HASHMAP
+    # very useful!
+
+validAnagram('anagram', 'naagarm')
