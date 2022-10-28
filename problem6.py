@@ -23,10 +23,12 @@
 # If not, will come out as true
 
 def containsDuplicate(nums):
-    nums = [1,2,3,4]
     countNums = {}
 
     for i in range(len(nums)):
         countNums[nums[i]] = 1 + countNums.get(nums[i], 0)
         if countNums[nums[i]] == 2:
-            return False
+            return True
+            # Got this as false because I didn't read and understand the question right
+
+containsDuplicate([1,2,3,4])
