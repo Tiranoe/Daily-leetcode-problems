@@ -21,3 +21,12 @@
 # iterate through the array
 # If hashmap has more than one value, then output comes as false
 # If not, will come out as true
+
+def containsDuplicate(nums):
+    nums = [1,2,3,4]
+    countNums = {}
+
+    for i in range(len(nums)):
+        countNums[nums[i]] = 1 + countNums.get(nums[i], 0)
+        if countNums[nums[i]] == 2:
+            return False
