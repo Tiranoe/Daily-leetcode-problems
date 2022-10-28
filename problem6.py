@@ -14,3 +14,10 @@
 ## My example would be:
 #Input: nums = [1,2,3,3]
 #Output: true
+
+## Pseudocoding what the step by step thought processes
+## First initial thought would be to use the hashmapping to solve this equation
+# In the given array of integers, we need to hashmap through it to check each value
+# iterate through the array
+# If hashmap has more than one value, then output comes as false
+# If not, will come out as true
