@@ -31,4 +31,4 @@ def containsDuplicate(nums):
             return True
             # Got this as false because I didn't read and understand the question right
 
-containsDuplicate([1,2,3,4])
+#Leet code accepted the solution! Success.
