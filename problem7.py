@@ -11,4 +11,15 @@
 ## we need to check if the word is palindrome and return output of true/false
 
 ## How am i going to solve this solution?
-### I need to use 
+### First thought was to use the split, and reverse method
+### Then checking for if the string is equal to the reverse string, then return true
+
+
+def isPalindrome(s: str):
+    check = s.reverse()
+    print(check)
+
+isPalindrome('racecar')
+
+#found out there is no 'reverse' method in python
+#you can still use the slice method
