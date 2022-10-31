@@ -15,11 +15,33 @@
 ### Then checking for if the string is equal to the reverse string, then return true
 
 
-def isPalindrome(s: str):
-    check = s.reverse()
-    print(check)
+# def isPalindrome(s: str):
+  #   together = s.replace(" ", "").replace(",", "").replace(':!@#$%^&*();.', '').lower()
+    # check = together[::-1]
+    # print(check)
+    # print(together)
+    # if check == together:
+    #     print('True')
+    # if check != together:
+    #     return False
 
-isPalindrome('racecar')
+# isPalindrome('A man, a plan, a canal: Panama')
 
 #found out there is no 'reverse' method in python
 #you can still use the slice method
+
+## [::-1] slice method works
+
+## Need to find a way to remove spaces - replace method => replace(' ', "")
+## Need to find a method for speical characters to be gone??
+## apparently there is a method called: isalnum() => which gets rid of all special char
+
+def isPalindrome(s: str):
+    joined = ''.join(e for e in s if e.isalnum()).lower()
+    reversed = joined[::-1]
+    if joined == reversed:
+        return True
+
+isPalindrome('A man, a plan, a canal: Panama')
+
+# CODE WORKS YES
