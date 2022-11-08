@@ -19,3 +19,17 @@
 ## Maybe we can use the for loop to go through the string s 
 
 def validParenthesis(s):
+    stack = []
+    hash = {"(":")", "{":"}", "[":"]"}
+    
+    for char in s:
+        if char not in hash:
+            stack.append(char)
+            continue
+        if not stack or stack[-1] != hash[char]:
+            return False
+        stack.pop()
+
+    return not stack
+
+# solution works!
