@@ -11,6 +11,8 @@
 # [](){} => True
 # (] => False
 
+## I think i can probably write this code if I just use the if statements. but that's not gonna cut it for the recruiters, etc.
+
 ## Pseudocode -
 ### First thought is for the code to detect a opening parenthesis, bracket, block
 ### Then we need to ensure that code checks for closing side right after the first one
