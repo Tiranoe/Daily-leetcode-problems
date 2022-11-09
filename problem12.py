@@ -13,3 +13,11 @@
 # Output: -1
 # Explanation: 2 does not exist in nums so return -1
 
+## Pseudocode
+# in the given array, we need to iterate for each element in the given ascending array to locate the target number
+# when it find the location, we need to return the index of the target in the given array
+# if not, we return -1
+# NOTE that this needs to be algorithm with 0(log n) runtime complexity which means that we need to divide and conquer
+
+def binarySearch(nums):
+    
