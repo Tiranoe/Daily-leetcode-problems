@@ -38,3 +38,20 @@ def binarySearch(nums, target):
 # correct way is middle = left + ((right - left) // 2)
 
 ## solution accepted
+
+
+# Input: nums = [-1,0,3,5,9,12], target = 9
+# Output: 4
+
+def Solution(nums, target):
+    left = 0 #0 -> 3
+    right = len(nums) - 1 #5
+    while left <= right:
+        middle = left + ((right-left)//2) # 2 -> 4
+        if nums[middle] > target:
+            right = middle - 1
+        elif nums[middle] < target:
+            left = middle + 1
+        else:
+            return middle
+    return -1
