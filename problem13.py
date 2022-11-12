@@ -10,3 +10,10 @@
 
 #Input: head = []
 #Output: []
+
+## pseudocode
+### in order to solve this problem, since this is in an array, we need to split everything, 
+### reverse the order, and then join them back together
+
+def reversedList(head):
+    
