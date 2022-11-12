@@ -15,9 +15,21 @@
 ### in order to solve this problem, since this is in an array, we need to split everything, 
 ### reverse the order, and then join them back together
 
-def reversedList(head):
-    head.reverse()
-    print(head)
+#def reversedList(head):
+    #head.reverse()
+    #print(head)
+
+#reversedList([1,2,3,4,5])
+# solution works! with one simple reverse command - i guess python doesn't need to split
+
+def reversedList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    prev = None
+    while(head):
+        nex = head.next
+        head.next = prev
+        prev = head
+        head = nex
+    return prev
 
 reversedList([1,2,3,4,5])
-# solution works! with one simple reverse command - i guess python doesn't need to split
+#this solution is solved using the nodes Linked List
