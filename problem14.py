@@ -12,3 +12,9 @@
 
 #Input: list1 = [], list2 = [0]
 #Output: [0]
+
+## How are you going to solve the problem?
+## First, my first initial way to solve the problem was to add each list in an empty array
+## When it gets added, it iterates through the array and places itself when it's less than the number
+## Use the for loop to iterate through the whole array as it adds each number
+## Problem wants to solve it with linked nodes but unsure how to solve that.
