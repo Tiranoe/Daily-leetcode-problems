@@ -16,4 +16,8 @@
 ### reverse the order, and then join them back together
 
 def reversedList(head):
-    
+    head.reverse()
+    print(head)
+
+reversedList([1,2,3,4,5])
+# solution works! with one simple reverse command - i guess python doesn't need to split
