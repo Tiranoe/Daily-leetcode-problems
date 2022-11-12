@@ -22,7 +22,7 @@
 #reversedList([1,2,3,4,5])
 # solution works! with one simple reverse command - i guess python doesn't need to split
 
-def reversedList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+def reversedList(self, head):
     prev = None
     while(head):
         nex = head.next
