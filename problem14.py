@@ -18,3 +18,7 @@
 ## When it gets added, it iterates through the array and places itself when it's less than the number
 ## Use the for loop to iterate through the whole array as it adds each number
 ## Problem wants to solve it with linked nodes but unsure how to solve that.
+
+def addList(list1, list2):
+    # tried to add the list together and then sort it but didn't work
+    
