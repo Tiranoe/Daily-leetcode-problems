@@ -19,7 +19,10 @@
 ## Use the for loop to iterate through the whole array as it adds each number
 ## Problem wants to solve it with linked nodes but unsure how to solve that.
 
-import ListNode
+class ListNode:
+     def __init__(self, x):
+         self.val = x
+         self.next = None
 
 def addList(self, list1: ListNode, list2: ListNode) -> ListNode:
     # tried to add the list together and then sort it but didn't work

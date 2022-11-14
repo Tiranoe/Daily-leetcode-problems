@@ -20,3 +20,19 @@
 #Output: false
 #Explanation: There is no cycle in the linked list.
 
+# Unsure how I would solve this with Linked List.. let's think about it
+# we need to use the comparison method with slow and fast
+# if fast ever catches up, it will equal to slow cycle, then the problem will betrue
+
+def hasCycle(head):
+    slow, fast = head, head
+
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+        if slow == next:
+            return True
+    return False
+
+# easy to understand if you think in a diagram
+# the Big O Notation is O(n) - constant time
