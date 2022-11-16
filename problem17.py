@@ -18,11 +18,25 @@
 ## We can even find a mathematical way to check the root of binary tree with these numbers
 ## maybe a for loop using the multipled by 2, method mentioned above?
 
-def invertTree(root):
-    for e in range(len(root)):
-        # create an empty array to put into every row?
+#Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return None # this is for checking if root has numbers
         
-        print(e)
+        temp = root.left
+        root.left = root.right
+        root.right = temp
+
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+        return root
 
 
-invertTree([4,2,7,1,3,6,9])
+Solution([4,2,7,1,3,6,9])
