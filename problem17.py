@@ -26,7 +26,7 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def invertTree(self, root):
         if not root:
             return None # this is for checking if root has numbers
         
@@ -37,6 +37,3 @@ class Solution:
         self.invertTree(root.left)
         self.invertTree(root.right)
         return root
-
-
-Solution([4,2,7,1,3,6,9])
