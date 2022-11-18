@@ -19,21 +19,22 @@
 ## maybe a for loop using the multipled by 2, method mentioned above?
 
 #Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 
-class Solution:
-    def invertTree(self, root):
-        if not root:
-            return None # this is for checking if root has numbers
+def invertTree(self, root):
+    if not root:
+        return None # this is for checking if root has numbers
         
-        temp = root.left
-        root.left = root.right
-        root.right = temp
+    temp = root.left
+    root.left = root.right
+    root.right = temp
 
-        self.invertTree(root.left)
-        self.invertTree(root.right)
-        return root
+    self.invertTree(root.left)
+    self.invertTree(root.right)
+    return root
+
+invertTree(root = [1,2,3,4,5,6,7])
