@@ -1,7 +1,7 @@
 
 # this function puts out the string into split elements in an array
-#first = [*s]
-#second = [*t]
+# first = [*s]
+# second = [*t]
 # print(first)
 
 
