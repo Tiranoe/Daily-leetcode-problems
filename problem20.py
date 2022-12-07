@@ -15,3 +15,7 @@
 #Explanation: The last word is "joyboy" with length 6.
 
 
+## step by step thought process
+## I got stuck? Why?
+## I couldn't figure out if something is a word
+## A word is a list of consecutive letters without spaces 
