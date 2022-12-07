@@ -40,3 +40,7 @@ class Solution:
         #print(length)
         return length
     
+# Big O notation = 
+## Time complexity is O(n) where n equals length of s
+## Space complexity is O(w) where w equals length of the largest word in s
+
