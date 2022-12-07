@@ -19,3 +19,24 @@
 ## I got stuck? Why?
 ## I couldn't figure out if something is a word
 ## A word is a list of consecutive letters without spaces 
+
+
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        word = ""
+        length = 0
+        for i in range(len(s)):
+        ## iterate through string s
+            char = s[i]
+            if char == " ":
+                if len(word) > 0:
+                    length = len(word)
+                    #print(word, length)
+                word = ""
+            else:
+                word += char
+        if len(word) > 0:
+            length = len(word)
+        #print(length)
+        return length
+    
