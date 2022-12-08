@@ -30,3 +30,7 @@ class Solution:
                 if other[i] != char: #comparing each letter of each word to the shortest word
                     return shortest[:i]
         return shortest # returns the fl into the output
+
+## Big o notation is
+# Time complexity of O(n) where n equals length of strs
+# Space complexity of O(w) where w equals to longest char in strs (?)
