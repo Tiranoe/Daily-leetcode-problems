@@ -13,7 +13,6 @@
 # You must do this by modifying the input array in-place with O(1) extra memory.
 
 ## Custom Judge
-## Custom Judge:
 
 '''
 The judge will test your solution with the following code:
@@ -32,3 +31,21 @@ for (int i = 0; i < actualLength; i++) {
 }
 If all assertions pass, then your solution will be accepted.'''
 
+# EXAMPLES
+
+'''Input: nums = [3,2,2,3], val = 3
+Output: 2, nums = [2,2,_,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 2.
+It does not matter what you leave beyond the returned k (hence they are underscores).'''
+
+class Solution:
+    lst = []
+    for i in range(len(nums)):
+        if nums[i]==val:
+            lst.append(i)
+    lst.reverse()
+    for i in lst:
+        nums.pop(i)
+    return len(nums)
+
+#problem solved
