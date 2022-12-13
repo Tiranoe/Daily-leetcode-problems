@@ -16,3 +16,15 @@
 ## Input: nums = [3,1,2,10,1]
 ## Output: [3,4,6,16,17]
 
+# How to solve the problem:
+# Since there is an array, we just return the sum everytime we go through the for loop
+
+def sumOfOneArray(nums):
+    sum = 0
+    array = []
+    for i in range(len(nums)):
+        sum += nums[i]
+        array += [sum]
+    return array
+
+# Leetcode accepted the problem solving!
