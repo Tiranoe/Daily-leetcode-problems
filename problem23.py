@@ -28,3 +28,7 @@ def sumOfOneArray(nums):
     return array
 
 # Leetcode accepted the problem solving!
+
+## Big o notation is
+# Time complexity of O(n) where n equals length of nums
+# Space complexity of O(w) where w equals to longest sum in nums
