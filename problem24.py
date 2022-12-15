@@ -27,3 +27,7 @@ def isSubsqn(s, t):
             sl+=1
         tl+=1
     return sl==len(s)
+
+# Big O notation is
+# Space Complexity of O(n) where n equals length of s
+# Time Complexity of O(1) where time is constant
