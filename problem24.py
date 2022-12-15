@@ -19,3 +19,11 @@
 # Another way I could think of is using hashmap.
 # but unsure how i would do so.
 
+def isSubsqn(s, t):
+    sl, tl = 0, 0
+        
+    while sl<len(s) and tl<len(t):
+        if s[sl] == t[tl]:
+            sl+=1
+        tl+=1
+    return sl==len(s)
