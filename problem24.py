@@ -14,3 +14,8 @@
 
 # Input: s = "axc", t = "ahbgdc"
 # Output: false
+
+# we need to iterate through t string first every s value. (so use maybe two for loop method)
+# Another way I could think of is using hashmap.
+# but unsure how i would do so.
+
