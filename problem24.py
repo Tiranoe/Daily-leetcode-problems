@@ -8,3 +8,9 @@
 # of the remaining characters. 
 # (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
 
+## Examples
+# Input: s = "abc", t = "ahbgdc"
+# Output: true
+
+# Input: s = "axc", t = "ahbgdc"
+# Output: false
