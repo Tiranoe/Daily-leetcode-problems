@@ -14,3 +14,6 @@
 
 # Input: list1 = [], list2 = [0]
 # Output: [0]
+
+## need to merge the two list into one array
+## But need to arrange them by the sorted list from least to greatest
