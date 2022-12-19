@@ -41,3 +41,12 @@
 
 # Maybe we can use from total addition of all the sums to approach this
 # thinking of using the total minus the index in every iteration to get the rightsum
+
+def solution(nums):
+    total= sum(nums)
+    temp = 0
+    for i in range(len(nums)):
+        if(nums[i] == total - 2*temp): 
+            return i
+        temp += nums[i]
+    return -1
