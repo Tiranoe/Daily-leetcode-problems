@@ -50,3 +50,5 @@ def solution(nums):
             return i
         temp += nums[i]
     return -1
+
+#this solution works! Leetcode accepted
