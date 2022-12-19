@@ -28,3 +28,14 @@
 # The pivot index is 0.
 # Left sum = 0 (no elements to the left of index 0)
 # Right sum = nums[1] + nums[2] = 1 + -1 = 0
+
+        #leftSum = 0
+        #rightSum = 0
+        #for i in range(len(nums)):
+        #    leftSum += nums[i]
+        #    #print(leftSum) => this displays all sum for every iteration
+        #for j in reversed(len(nums)):
+        #    print(nums[j])
+
+        ## this solution is not going to work, need to find a different way to solve the problem
+
