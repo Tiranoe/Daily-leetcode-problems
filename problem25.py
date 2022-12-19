@@ -39,3 +39,5 @@
 
         ## this solution is not going to work, need to find a different way to solve the problem
 
+# Maybe we can use from total addition of all the sums to approach this
+# thinking of using the total minus the index in every iteration to get the rightsum
