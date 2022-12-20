@@ -24,3 +24,5 @@ def middleNode(head):
         fast = fast.next.next
         slow = slow.next
     return slow
+
+# leetcode accepted solution
