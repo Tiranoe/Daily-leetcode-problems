@@ -24,3 +24,5 @@ def preorder(root):
         stack.extend(reversed(top.children))
     
     return output
+
+#leetcode accepted
