@@ -28,4 +28,6 @@ def subtractProductAndSum(self, n: int) -> int:
             product *= last
             n = n//10
         return product - sum
-            
+
+# Leetcode accepts the problem!
+
