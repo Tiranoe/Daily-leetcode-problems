@@ -33,11 +33,11 @@ def subtractProductAndSum(self, n: int) -> int:
 
 # How can i implement this with for loop though?
 def subtractProductAndSum(self, n: int) -> int:
-        new=str(n)
-        nlist=list(new)
-        newlist=[]
-        for i in nlist:
-            newlist.append(int(i))
+        new=str(n)              # makes the number into string
+        nlist=list(new)         # makes the string into list.
+        newlist=[]              # create an empty bracklet to push the nlist
+        for i in nlist:             # loop around the nlist to push each row into newList
+            newlist.append(int(i))  # append pushes the number into bracket
         mul=1
         sum=0
         for i in range(len(newlist)):
@@ -45,3 +45,5 @@ def subtractProductAndSum(self, n: int) -> int:
             sum+=newlist[i]
         dif=mul-sum
         return (dif)
+
+# need to turn the 3 digit number into a LIST. (Line 36-40)
