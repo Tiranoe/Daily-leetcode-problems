@@ -19,3 +19,13 @@
 # Sum of digits = 4 + 4 + 2 + 1 = 11 
 # Result = 32 - 11 = 21
 
+def subtractProductAndSum(self, n: int) -> int:
+        sum = 0
+        product = 1
+        while n != 0:
+            last = n % 10 #this goes through the n from last number to first number
+            sum += last
+            product *= last
+            n = n//10
+        return product - sum
+            
