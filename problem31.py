@@ -31,3 +31,17 @@ def subtractProductAndSum(self, n: int) -> int:
 
 # Leetcode accepts the problem!
 
+# How can i implement this with for loop though?
+def subtractProductAndSum(self, n: int) -> int:
+        new=str(n)
+        nlist=list(new)
+        newlist=[]
+        for i in nlist:
+            newlist.append(int(i))
+        mul=1
+        sum=0
+        for i in range(len(newlist)):
+            mul=mul*newlist[i]
+            sum+=newlist[i]
+        dif=mul-sum
+        return (dif)
