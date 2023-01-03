@@ -21,3 +21,9 @@
 # second example would need to include if nums[i] is greater than target, you return i
 # third example would just return i, if it finish iterating but didn't not find anything
 
+def searchInsert(self, nums: int, target: int) -> int:
+    for i in range(len(nums)):
+        if nums[i] >= target:
+            return i
+    if nums != 0:
+        return len(nums)
