@@ -27,3 +27,5 @@ def searchInsert(self, nums: int, target: int) -> int:
             return i
     if nums != 0:
         return len(nums)
+
+#leetcode accepts the answer
