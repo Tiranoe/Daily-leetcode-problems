@@ -39,6 +39,3 @@ def romanToInteger(s):
     for char in s:
         sum += rti.get(char)
     print(sum)
-
-s = "III"
-romanToInteger(s)
