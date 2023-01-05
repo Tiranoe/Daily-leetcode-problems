@@ -41,3 +41,6 @@ def romanToInteger(s):
     print(sum)
 
 #leetcode accetped solution
+
+#Time Complexity = 0(n)
+#Space Complexity = 0(1)
